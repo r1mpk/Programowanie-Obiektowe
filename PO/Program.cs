@@ -106,8 +106,8 @@ namespace main
         {
             Console.WriteLine("What is the numerical value of the temperature in Celcius you want to convert?");
             Sup.emptyLine();
-            int task1IniValue = int.MinValue;
-            while (task1IniValue == int.MinValue)
+            double task1IniValue = -270;
+            while (task1IniValue == -270)
             {
                 try
                 {
@@ -118,7 +118,7 @@ namespace main
                     Console.WriteLine("Wrong value! Try again.");
                 }
             }            
-            int task1FinalValue = 32 + (9 / 5) * task1IniValue;
+            double task1FinalValue = 32 + (9 / 5) * task1IniValue;
             Console.WriteLine("The {0} Celcius is {1} in Fahrenheit.", task1IniValue, task1FinalValue);
             return;
         }
